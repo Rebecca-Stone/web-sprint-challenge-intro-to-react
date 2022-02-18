@@ -6,8 +6,8 @@ import styled from "styled-components";
 
 // I used my styled-components to be able to call from my theme
 const StyledCharacter = styled.div`
-  width: 20%;
-  margin: 5%;
+  width: 25%;
+  margin: 1%;
   padding: 1%;
   border-radius: 10px;
   text-align: justify;

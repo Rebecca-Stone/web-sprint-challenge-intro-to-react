@@ -36,9 +36,9 @@ In meeting the minimum viable product (MVP) specifications listed below, your pr
 
 Your finished project must include all of the following requirements:
 
-- [ ] Use the endpoint `[GET] https://swapi.dev/api/people` (mocked in [msw](https://github.com/mswjs/msw)) to obtain characters.
-- [ ] Set the list of characters into state.
-- [ ] Render your characters to the DOM:
+- [X] Use the endpoint `[GET] https://swapi.dev/api/people` (mocked in [msw](https://github.com/mswjs/msw)) to obtain characters.
+- [X] Set the list of characters into state.
+- [X] Render your characters to the DOM:
 
   1. Build a React component named 'Character' to render an individual character.
   1. Map over the list in state, and for each character render a Character to the page.
@@ -79,6 +79,17 @@ After finishing your required elements, you can push your work further. These go
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Put your answers underneath the questions:
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+
+React JS is a javaScript UI development library. It uses JSX which is mostly a mix of HTML and JavaScript. It solves the problem of having to write hard coded HTML and CSS (with styled components).
+
 1. Describe component state.
+
+A built in React object that holds and data or info about a component. When holding the data or info, we can then manipulate it and change it, without effecting the original data.
+
 1. Describe props.
+
+Props are used to pass data and event handlers to the children components. They can are immutable—once set, props cannot be changed. They can be used in both functional and class components. The parent component sets props for the children components
+
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+Side effects happen when we use useEffect for things like, getting data or changing the DOM in React components. When you setState and pass it props, whenever props get changed, it will set as the state inside useEffect. Thats why useEffect is primarily to handle side effects.
