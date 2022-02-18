@@ -28,7 +28,7 @@ const App = () => {
       <h1 className="Header">Characters</h1>
       {character.map((element, index) => {
         return (
-          <Character
+          <Character className="mock"
             key={index}
             name={element.name}
             eyeColor={element.eye_color}
